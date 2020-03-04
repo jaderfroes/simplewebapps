@@ -1,0 +1,69 @@
+@charset "UTF-8";
+    
+body{ 
+    /*background-image: url("fundo.jpg");*/
+    /*background-color: #a1d3ef; /*código hexa da cor em RGB*/
+    background-color: hsla(165, 81%, 93%, 0.8);/*usando função rgb*/
+    color: rgba(0,0,0,1); /*cor da letra, 'a' alpha - transparênncia*/
+}
+p{
+    text-align: justify;
+    text-indent: 50px;
+}
+
+/*Formatação de imagens com legendas*/
+
+figure.foto-legenda{ /*tag_figure.nome_classe do arquivo .html*/
+    position: relative;
+    border: 8px solid white;
+    box-shadow: 1px 1px 4px black;
+}
+
+figure.foto-legenda img{ /*objeto filho da foto-legenda*/
+    width: 100%;
+    height: 100%;
+}
+
+figure.foto-legenda figcaption{ /* legenda da imagem*/
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,.4);
+    color: white;
+    width: 100%; /* borda ocupando toda a imagem */
+    height: 100%;
+    padding: 10px; /* espaco na legenda*/
+    box-sizing: border-box; /*box dentro da borda*/
+    transition: opacity 1s; /* transição de 1seg quando o mouse esta em cima(hover)*/
+}
+
+figure.foto-legenda:hover figcaption{ /* hover faz tal ação quando o mouse esta em cima do obj*/
+    opacity: 1;
+}
+
+/*formatação menu*/
+
+nav#menu{
+    display: block;
+
+}
+
+nav#menu ul{
+    list-style: none; 
+    text-transform: uppercase;
+    position: absolute;
+    top: -20px;
+    left: 300px;
+}
+
+nav#menu li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+}
+
+
+nav#menu h1{
+    display: none;
+}
