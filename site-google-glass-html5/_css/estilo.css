@@ -1,5 +1,6 @@
 @charset "UTF-8";
-    
+/*prefixr.com - site que tem refatoração de código em CSS3*/
+
 body{ 
     /*background-image: url("fundo.jpg");*/
     /*background-color: #a1d3ef; /*código hexa da cor em RGB*/
@@ -61,9 +62,22 @@ nav#menu li{
     background-color: #dddddd;
     padding: 10px;
     margin: 2px;
+    transition: background-color 1s;
 }
 
+nav#menu li:hover{ /* ação ao passar o mouse por cima do menu */
+    background-color: #606060;
+}
 
 nav#menu h1{
     display: none;
+}
+
+nav#menu a{ /*todo nav menu que tenha ancora... */
+    color: black;
+    text-decoration: none;
+}
+
+nav#menu a:hover{
+    color: white;
 }
