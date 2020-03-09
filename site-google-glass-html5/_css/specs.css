@@ -1,0 +1,18 @@
+@charset "UTF-8";
+
+/* 
+    Estiliza os arquivos somente do arquivo specs.html
+*/
+
+section#conteudo{
+    width: 1000px;
+    margin: auto;
+}
+
+iframe#frame-spec{
+    width: 400px;
+    height: 280px;
+    border: none;
+    align-self: center;
+}
+
