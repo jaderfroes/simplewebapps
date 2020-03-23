@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de JS - 12</title>
+        <meta charset="utf-8">
+
+        <script>
+            //switch case
+
+            var pos, msg;
+
+            pos=4;
+            
+            switch(pos){
+                case 1:
+                    msg = "ganhou a copa pistão<br>medalha de ouro";
+                    break;
+                case 2:
+                    msg = "medalha de prata";
+                    break;
+                case 3:
+                    msg = "medalha de bronze";
+                    break;
+                default:
+                    msg = "não ficou no pódio<br>"
+            }
+
+            switch(pos){
+                case 1: 
+                case 2:
+                case 3:
+                    msg += "<br>subiu ao pódio";
+                    break;
+                default:
+                    msg += "<br>não teve colocação"
+            }
+
+            document.write(msg);
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
