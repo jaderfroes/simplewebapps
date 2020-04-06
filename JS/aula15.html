@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de JS - 15</title>
+        <meta charset="utf-8">
+
+        <script>
+            //Array pt3
+            var mochila=[], mochila2=[], pos, numeros;
+            var num = [5, 8, 4, 9, 7, 6, 3, 0, 2 , 1]; 
+
+            num.sort(); // ordena em crescente o vetor 
+            num.reverse(); // ordena em decrescente
+            document.write(num+"<br>");
+
+            numeros=num.join(); // retorna vetor em string 
+            document.write("join = " + numeros + "<br>");
+
+            
+            mochila.push("faca");
+            mochila.push("corda");
+            mochila.push("pederneira");
+            mochila.push("chave");
+            mochila.push("lanterna");
+            mochila.push("pedra");
+
+            mochila2.push("arame");
+            mochila2.push("luva");
+            mochila2.push("joelheira");
+            mochila2.push("meias");
+            mochila2.push("moeda");
+            mochila2.push("canivete");
+            
+            // pos = mochila.indexOf("pedra"); //indexOf retorna o indice do elemento procurado
+
+            supermochila = mochila.concat(mochila2);
+
+            document.write(supermochila + "<br>");
+            document.write("tamanho da mochila: " + supermochila.length);
+        
+            
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

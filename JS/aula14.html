@@ -13,10 +13,11 @@
             mochila.push("pederneira");
             mochila.push("chave");
             mochila.push("lanterna");
-            mochila.unshift("pedra");  // insere no inicio do array
+            mochila.push("pedra");  // insere no inicio do array
 
-            mochila.pop();  // remove o último elemento
-            mochila.shift()  // remove do inicio e move todos uma posição anterior
+            //mochila.pop();  // remove o último elemento
+            //mochila.shift()  // remove do inicio e move todos uma posição anterior
+            mochila.splice(2, 3); //splice(a, b) remove 'b' elementos a partir de 'a'
 
             document.write(mochila[0] + "<br>");
             document.write(mochila[1] + "<br>");
