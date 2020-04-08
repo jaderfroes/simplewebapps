@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Curso de JS - 22</title>
+        <meta charset="utf-8">
+
+        <script>
+            /* Try catch
+            a rotina passivel de erro vai dentro do try
+            caso ocorra erro, o tratamento eh feito no catch.
+
+            Finally sempre eh executado
+            */      
+
+            var num; //ex: nao pode ser maior do que 10
+
+            try {
+                num = prompt("Digite um valor");
+                
+                if(num > 10){
+                    throw new Error("Valor inválido, o valor máximo é 10"); 
+                    /* throw  gera erro manualmente. 
+                        Usado em casos onde alguma particularidade do sistema requer algo especifico(valor de entrada...). 
+                    
+                    */
+                }
+                document.write("Valor: " + num);
+            } catch (e) {
+                console.log("Mensagem de erro: " + e.message);
+                num=10
+            }finally{
+                document.write(num);
+            }
+        
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>
